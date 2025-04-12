@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix - Programmierer & Esportler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Felix</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="cyber-lines"></div>
+        <div class="hero-content">
+            <h1 id="hero-name">Felix</h1>
+            <h2 id="hero-title">Programmierer & Esportler</h2>
+            <p class="cyber-subtitle" id="hero-subtitle">Kreativ. Innovativ. Vielseitig.</p>
+            <div class="cyber-button">
+                <a href="#about" class="btn">Entdecke mehr</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Über mich</h2>
+        <div class="about-content" id="about-messages">
+            <!-- Nachrichten werden dynamisch eingefügt -->
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Meine Fähigkeiten</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programmierung</h3>
+                <p>Entwicklung von Software und Anwendungen</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>Kreative Gestaltung und UI/UX Design</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-film"></i>
+                <h3>Motion Design</h3>
+                <p>Animation und Bewegtbild</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-video"></i>
+                <h3>Videoproduktion</h3>
+                <p>Professionelle Videobearbeitung</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-discord"></i>
+                <h3>Discord</h3>
+                <p>Community Management und Bot-Entwicklung</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projekte</h2>
+        <div class="projects-grid" id="projects-container">
+            <!-- Projekt-Karten werden dynamisch eingefügt -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-content">
+            <div class="social-links" id="social-links">
+                <!-- Social Links werden dynamisch eingefügt -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Felix. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Projekt Popup Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modal-title">Projekttitel</h2>
+            </div>
+            <div class="modal-body">
+                <div class="carousel-container">
+                    <div class="carousel" id="project-carousel">
+                        <!-- Bilder werden dynamisch eingefügt -->
+                    </div>
+                    <button class="carousel-btn prev" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" id="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <!-- Punkte werden dynamisch eingefügt -->
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p id="modal-description">Projektbeschreibung</p>
+                    <div class="technologies" id="modal-technologies">
+                        <!-- Technologien werden dynamisch eingefügt -->
+                    </div>
+                    <div class="project-links">
+                        <a href="#" id="github-link" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" id="live-link" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
